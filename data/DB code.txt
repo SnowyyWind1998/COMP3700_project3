@@ -1,0 +1,34 @@
+CREATE TABLE "Customers" (
+	"CustomerID"	INTEGER,
+	"Name"	TEXT,
+	"Phone"	TEXT,
+	"Address"	TEXT
+);
+
+CREATE TABLE "Products" (
+	"ProductId"	INTEGER,
+	"Name"	TEXT,
+	"Price"	REAL,
+	"Quantity"	REAL,
+	PRIMARY KEY("ProductId")
+);
+
+CREATE TABLE "Purchases" (
+	"PurchaseID"	INTEGER,
+	"CustomerID"	INTEGER,
+	"ProductID"	INTEGER,
+	"Price"	REAL,
+	"Quantity"	REAL,
+	"Cost"	REAL,
+	"Tax"	REAL,
+	"Total"	REAL,
+	"Date"	TEXT,
+	PRIMARY KEY("PurchaseID")
+);
+
+CREATE TABLE "Users" (
+	"Username"	TEXT,
+	"Password"	TEXT,
+	"Fullname"	TEXT,
+	"UserType"	INTEGER
+);
